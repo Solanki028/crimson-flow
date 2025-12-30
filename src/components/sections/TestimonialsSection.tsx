@@ -87,7 +87,7 @@ export const TestimonialsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="text-blue-600 font-semibold mb-4 block text-sm tracking-wider uppercase">
+          <span className="text-primary font-semibold mb-4 block text-sm tracking-wider uppercase">
             TESTIMONIALS
           </span>
           <h2
@@ -95,7 +95,7 @@ export const TestimonialsSection: React.FC = () => {
             style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}
           >
             Trusted by{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               industry leaders
             </span>
           </h2>
@@ -150,8 +150,8 @@ export const TestimonialsSection: React.FC = () => {
                     className="relative w-[320px] sm:w-[380px] md:w-[420px] flex-shrink-0"
                   >
                     <div className="bg-white rounded-2xl p-7 h-full shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-                      <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-5">
-                        <Quote className="w-6 h-6 text-blue-600" />
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <Quote className="w-6 h-6 text-primary" />
                       </div>
 
                       <blockquote className="text-gray-700 text-[15px] mb-7 leading-relaxed">
@@ -185,8 +185,8 @@ export const TestimonialsSection: React.FC = () => {
                       key={t.author}
                       className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"
                     >
-                      <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-6">
-                        <Quote className="w-6 h-6 text-blue-600" />
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                        <Quote className="w-6 h-6 text-primary" />
                       </div>
                       <blockquote className="text-gray-700 text-base mb-8 leading-relaxed">
                         “{t.quote}”
@@ -250,7 +250,7 @@ export const TestimonialsSection: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: 0.25 }}
             >
-              <div className="text-2xl font-bold text-blue-600 leading-none">
+              <div className="text-2xl font-bold text-primary leading-none">
                 24/7
               </div>
               <div className="text-xs text-gray-600">Support</div>

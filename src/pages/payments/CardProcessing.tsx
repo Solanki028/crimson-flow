@@ -106,9 +106,9 @@ export default function CardProcessing() {
                                 <span className="text-sm font-medium text-purple-700">Global Processing</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Accept Cards <br />
-                                <span className="text-purple-600">With Confidence</span>
+                                <span className="text-secondary">With Confidence</span>
                             </h1>
 
                             <div className="text-xl text-gray-600 mb-8 h-8 flex items-center gap-2">
@@ -121,7 +121,7 @@ export default function CardProcessing() {
                             </p>
 
                             <div className="flex gap-4">
-                                <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
+                                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
                                     Enable Card Payments
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
@@ -180,13 +180,13 @@ export default function CardProcessing() {
                         <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/4"></div>
 
                         <div className="relative z-10">
-                            <h2 className="text-4xl font-bold mb-6">Ready to go global?</h2>
+                            <h2 className="text-4xl font-bold mb-6 text-white">Ready to go global?</h2>
                             <p className="text-purple-100 text-lg mb-10 max-w-2xl mx-auto">
                                 Start accepting international cards in less than 10 minutes.
                             </p>
 
                             <div className="flex justify-center gap-4">
-                                <Button className="bg-white text-purple-600 hover:bg-purple-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
+                                <Button className="bg-white text-primary hover:bg-purple-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
                                     Enable International Payments
                                 </Button>
                             </div>

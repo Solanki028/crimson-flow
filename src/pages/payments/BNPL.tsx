@@ -28,9 +28,9 @@ export default function BNPL() {
                                 <span className="text-sm font-medium text-green-700">Buy Now Pay Later</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Sales up by 30%. <br />
-                                <span className="text-green-600">Risk down to 0%.</span>
+                                <span className="text-secondary">Risk down to 0%.</span>
                             </h1>
 
                             <div className="mb-8 h-8">
@@ -43,7 +43,7 @@ export default function BNPL() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                                <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
+                                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
                                     Enable BNPL
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
@@ -125,7 +125,7 @@ export default function BNPL() {
                         <div className="inline-block px-4 py-1.5 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-6">
                             Instant Approvals
                         </div>
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Underwriting in milliseconds.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">Underwriting in milliseconds.</h2>
                         <p className="text-xl text-gray-600">
                             Our AI-driven credit engine analyzes 500+ data points to approve customers instantly, without any paperwork.
                         </p>
@@ -171,7 +171,7 @@ export default function BNPL() {
                     </p>
 
                     <div className="flex justify-center gap-4">
-                        <Button className="bg-white text-green-900 hover:bg-green-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
+                        <Button className="bg-white text-primary hover:bg-green-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
                             Activate BNPL
                         </Button>
                     </div>

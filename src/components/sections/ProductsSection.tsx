@@ -36,8 +36,8 @@ const FEATURES: Feature[] = [
     icon: Zap,
     title: "UPI Collection",
     description: "Collect payments via UPI with real-time settlement.",
-    color: "from-rose-500 via-red-500 to-orange-400",
-    accent: "text-rose-300",
+    color: "from-accent via-red-500 to-orange-400",
+    accent: "text-accent",
     mock: {
       label: "Today’s Collections",
       value: "₹ 3.42 Cr",
@@ -53,8 +53,8 @@ const FEATURES: Feature[] = [
     icon: CreditCard,
     title: "Simpli Collect",
     description: "Unique Virtual IDs for hassle-free payments.",
-    color: "from-blue-500 via-indigo-500 to-violet-500",
-    accent: "text-indigo-300",
+    color: "from-primary via-blue-600 to-secondary",
+    accent: "text-primary",
     mock: {
       label: "Virtual IDs Active",
       value: "12,980",
@@ -70,8 +70,8 @@ const FEATURES: Feature[] = [
     icon: Repeat,
     title: "Recurring Collections",
     description: "Effortless automated recurring payments via UPI.",
-    color: "from-fuchsia-500 via-purple-500 to-indigo-500",
-    accent: "text-fuchsia-300",
+    color: "from-secondary via-purple-600 to-primary",
+    accent: "text-secondary",
     mock: {
       label: "Recurring Schedules",
       value: "2,304",
@@ -87,8 +87,8 @@ const FEATURES: Feature[] = [
     icon: QrCode,
     title: "QR Collection for Merchants",
     description: "Effortless, secure, real-time QR payment collections.",
-    color: "from-emerald-500 via-green-500 to-teal-500",
-    accent: "text-emerald-300",
+    color: "from-primary via-teal-600 to-secondary",
+    accent: "text-primary",
     mock: {
       label: "Merchant QR Scans",
       value: "6,740",
@@ -104,8 +104,8 @@ const FEATURES: Feature[] = [
     icon: Layers,
     title: "Bulk Payments",
     description: "Transfer funds to many instantly.",
-    color: "from-amber-400 via-orange-500 to-rose-500",
-    accent: "text-amber-300",
+    color: "from-secondary via-pink-600 to-accent",
+    accent: "text-secondary",
     mock: {
       label: "Bulk Batches",
       value: "55",
@@ -121,8 +121,8 @@ const FEATURES: Feature[] = [
     icon: Send,
     title: "UPI Payout",
     description: "Instant, cost-effective UPI payments.",
-    color: "from-cyan-500 via-sky-500 to-blue-600",
-    accent: "text-cyan-300",
+    color: "from-primary via-cyan-600 to-blue-600",
+    accent: "text-primary",
     mock: {
       label: "Payouts Today",
       value: "₹ 1.18 Cr",
@@ -171,9 +171,9 @@ export const ProductsSection: React.FC = () => {
     >
       {/* Ambient background (fintech vibe) */}
       <div className="absolute inset-0">
-        <div className="absolute -top-24 -left-24 w-[520px] h-[520px] bg-rose-500/15 rounded-full blur-3xl" />
-        <div className="absolute -bottom-24 -right-24 w-[620px] h-[620px] bg-sky-500/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[780px] h-[780px] bg-violet-500/10 rounded-full blur-3xl" />
+        <div className="absolute -top-24 -left-24 w-[520px] h-[520px] bg-accent/15 rounded-full blur-3xl" />
+        <div className="absolute -bottom-24 -right-24 w-[620px] h-[620px] bg-primary/15 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[780px] h-[780px] bg-secondary/10 rounded-full blur-3xl" />
 
         {/* subtle grid */}
         <div className="absolute inset-0 opacity-[0.12]">
@@ -234,11 +234,10 @@ export const ProductsSection: React.FC = () => {
                   type="button"
                   onMouseEnter={() => setActive(idx)}
                   onFocus={() => setActive(idx)}
-                  className={`w-full text-left group rounded-2xl border transition-all duration-300 ${
-                    isActive
-                      ? "border-white/20 bg-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.08)]"
-                      : "border-white/10 bg-white/5 hover:bg-white/8 hover:border-white/15"
-                  }`}
+                  className={`w-full text-left group rounded-2xl border transition-all duration-300 ${isActive
+                    ? "border-white/20 bg-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.08)]"
+                    : "border-white/10 bg-white/5 hover:bg-white/8 hover:border-white/15"
+                    }`}
                   initial={{ opacity: 0, x: -24 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-120px" }}
@@ -307,11 +306,10 @@ export const ProductsSection: React.FC = () => {
                   type="button"
                   onMouseEnter={() => setActive(idx)}
                   onFocus={() => setActive(idx)}
-                  className={`w-full text-left group rounded-2xl border transition-all duration-300 ${
-                    isActive
-                      ? "border-white/20 bg-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.08)]"
-                      : "border-white/10 bg-white/5 hover:bg-white/8 hover:border-white/15"
-                  }`}
+                  className={`w-full text-left group rounded-2xl border transition-all duration-300 ${isActive
+                    ? "border-white/20 bg-white/10 shadow-[0_0_0_1px_rgba(255,255,255,0.08)]"
+                    : "border-white/10 bg-white/5 hover:bg-white/8 hover:border-white/15"
+                    }`}
                   initial={{ opacity: 0, x: 24 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-120px" }}
@@ -544,9 +542,8 @@ const PhoneMock: React.FC<{
                   ].map((it) => (
                     <button
                       key={it.label}
-                      className={`text-[10px] font-semibold ${
-                        it.active ? "text-white" : "text-white/55"
-                      }`}
+                      className={`text-[10px] font-semibold ${it.active ? "text-white" : "text-white/55"
+                        }`}
                       type="button"
                     >
                       {it.label}

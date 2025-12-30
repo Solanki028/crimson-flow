@@ -123,8 +123,8 @@ export default {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-hero": "linear-gradient(135deg, hsl(245 58% 8%) 0%, hsl(0 0% 4%) 40%, hsl(276 40% 8%) 100%)",
-        "gradient-accent": "linear-gradient(to right, hsl(245 58% 20%), hsl(271 67% 35%), hsl(276 89% 37%))",
+        "gradient-hero": "linear-gradient(135deg, hsl(var(--primary) / 0.05) 0%, hsl(var(--background)) 40%, hsl(var(--secondary) / 0.05) 100%)",
+        "gradient-accent": "linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)))",
       },
     },
   },

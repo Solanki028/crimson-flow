@@ -14,7 +14,7 @@ export const HeroSection = () => {
 
         {/* Subtle floating orbs */}
         <motion.div
-          className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-blue-100/30 blur-3xl"
+          className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-secondary/20 blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -26,7 +26,7 @@ export const HeroSection = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-indigo-100/30 blur-3xl"
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-primary/20 blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.2, 0.4, 0.2],
@@ -65,7 +65,7 @@ export const HeroSection = () => {
             >
               The Future of{' '}
               <span className="relative inline-block min-w-[300px]">
-                <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                   <TypingText
                     text={["Digital Finance", "Global Payments", "Modern Banking"]}
                     typingSpeed={150}
@@ -98,7 +98,7 @@ export const HeroSection = () => {
             >
               <Link to="/contact">
                 <Button
-                  className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
+                  className="group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
                 >
                   <span>Get Started Free</span>
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -156,12 +156,12 @@ export const HeroSection = () => {
 
             {/* Floating accent elements */}
             <motion.div
-              className="absolute -top-8 -left-8 w-16 h-16 rounded-2xl bg-blue-200/30 blur-2xl"
+              className="absolute -top-8 -left-8 w-16 h-16 rounded-2xl bg-secondary/30 blur-2xl"
               animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
               transition={{ duration: 4, repeat: Infinity }}
             />
             <motion.div
-              className="absolute -bottom-8 -right-8 w-20 h-20 rounded-2xl bg-indigo-200/30 blur-2xl"
+              className="absolute -bottom-8 -right-8 w-20 h-20 rounded-2xl bg-primary/30 blur-2xl"
               animate={{ scale: [1.2, 1, 1.2], opacity: [0.3, 0.6, 0.3] }}
               transition={{ duration: 5, repeat: Infinity }}
             />

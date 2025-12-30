@@ -21,9 +21,9 @@ export default function Contact() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                             Get in touch with our <br />
-                            <span className="text-blue-600">Financial Experts</span>
+                            <span className="text-secondary">Financial Experts</span>
                         </h1>
                         <div className="text-xl text-gray-600 mb-8 h-8 flex items-center justify-center gap-2">
                             <TypingText
@@ -57,7 +57,7 @@ export default function Contact() {
                             className="space-y-12"
                         >
                             <div>
-                                <h2 className="text-3xl font-bold text-gray-900 mb-4">We are here to help you grow.</h2>
+                                <h2 className="text-3xl font-bold text-primary mb-4">We are here to help you grow.</h2>
                                 <p className="text-gray-600 text-lg">
                                     Whether you have questions about our API, pricing, or need a custom solution, our team is ready to answer all your questions.
                                 </p>
@@ -86,7 +86,7 @@ export default function Contact() {
                                 <div className="relative z-10">
                                     <div className="flex items-center gap-3 mb-4">
                                         <Shield className="w-8 h-8 text-green-400" />
-                                        <h3 className="text-xl font-bold">Enterprise Grade Security</h3>
+                                        <h3 className="text-xl font-bold text-white">Enterprise Grade Security</h3>
                                     </div>
                                     <p className="text-gray-400 mb-6">Your data is protected with military-grade encryption and compliant with global standards.</p>
                                     <div className="flex gap-4">
@@ -155,7 +155,7 @@ export default function Contact() {
                                         <Textarea placeholder="Tell us about your project needs..." className="min-h-[120px] rounded-xl border-gray-200 focus:ring-blue-500" />
                                     </div>
 
-                                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg rounded-xl font-bold transition-all shadow-lg hover:shadow-blue-500/25">
+                                    <Button className="w-full bg-primary hover:bg-primary/90 text-white py-6 text-lg rounded-xl font-bold transition-all shadow-lg hover:shadow-primary/25">
                                         Send Message
                                         <Send className="w-5 h-5 ml-2" />
                                     </Button>

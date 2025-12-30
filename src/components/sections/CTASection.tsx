@@ -137,7 +137,7 @@ export const CTASection = () => {
                     return (
                       <span
                         key={index}
-                        className="bg-gradient-to-r from-red-600 via-purple-600 to-orange-500 bg-clip-text text-transparent"
+                        className="bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent"
                       >
                         {word}{index < words.length - 1 ? ' ' : ''}
                       </span>
@@ -152,7 +152,7 @@ export const CTASection = () => {
               </span>
             </h2>
 
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
               Join 500+ enterprises already scaling their fintech operations with NWB.
               Get started in minutes with our developer-first platform.
             </p>
@@ -160,7 +160,7 @@ export const CTASection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-5 mb-10">
               <Link to="/contact">
-                <button className="group px-10 py-5 bg-gradient-to-r from-orange-500 via-red-500 to-purple-600 text-white rounded-2xl font-bold text-lg shadow-2xl shadow-purple-300 hover:shadow-purple-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-3">
+                <button className="group px-10 py-5 bg-gradient-to-r from-accent via-red-600 to-secondary text-white rounded-2xl font-bold text-lg shadow-2xl shadow-primary/30 hover:shadow-primary/40 transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-3">
                   Start Free Trial
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
                 </button>

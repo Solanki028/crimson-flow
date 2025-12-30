@@ -110,9 +110,9 @@ export default function CrossBorderPayments() {
                                 <span className="text-sm font-medium text-blue-700">100+ Currencies</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Global Payments <br />
-                                <span className="text-blue-600">Local Feel</span>
+                                <span className="text-secondary">Local Feel</span>
                             </h1>
 
                             <div className="mb-8 h-8">
@@ -125,7 +125,7 @@ export default function CrossBorderPayments() {
                             </p>
 
                             <div className="flex gap-4">
-                                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
+                                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
                                     Go Global
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
@@ -139,7 +139,7 @@ export default function CrossBorderPayments() {
             <section className="py-24 bg-blue-50 border-y border-blue-100">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Receive money like a local.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">Receive money like a local.</h2>
                         <p className="text-xl text-gray-600">
                             Give your international customers local bank details in 35+ currencies.
                             Collect payments without them paying wire fees.
@@ -192,7 +192,7 @@ export default function CrossBorderPayments() {
                     </p>
 
                     <div className="flex justify-center gap-4">
-                        <Button className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
+                        <Button className="bg-white text-primary hover:bg-blue-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
                             Start Collecting Globally
                         </Button>
                     </div>

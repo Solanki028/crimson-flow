@@ -107,9 +107,9 @@ export default function LendingPlatform() {
                                     transition={{ delay: 2.5 }}
                                     className="mt-6"
                                 >
-                                    <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-lg py-6 rounded-xl relative overflow-hidden group">
+                                    <Button className="w-full bg-primary hover:bg-primary/90 text-lg py-6 rounded-xl relative overflow-hidden group">
                                         <span className="relative z-10 transition-colors group-hover:text-white">Disburse Now</span>
-                                        <div className="absolute inset-0 h-full w-full bg-cyan-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                                        <div className="absolute inset-0 h-full w-full bg-secondary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                                     </Button>
                                 </motion.div>
                             </div>
@@ -127,9 +127,9 @@ export default function LendingPlatform() {
                                 <span className="text-sm font-medium text-cyan-700">Lending OS</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Loans disbursed <br />
-                                <span className="text-cyan-600">in Minutes</span>
+                                <span className="text-secondary">in Minutes</span>
                             </h1>
 
                             <div className="mb-8 h-8">
@@ -142,7 +142,7 @@ export default function LendingPlatform() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
+                                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
                                     Launch Lending
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
@@ -156,7 +156,7 @@ export default function LendingPlatform() {
             <section className="py-24 bg-white overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-20">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">The Lending Ecosystem</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">The Lending Ecosystem</h2>
                         <p className="text-xl text-gray-600">
                             Connecting capital to credit-worthy borrowers through our unified API.
                         </p>
@@ -184,7 +184,7 @@ export default function LendingPlatform() {
                         <div className="bg-gray-900 text-white p-8 rounded-full shadow-2xl z-20 w-48 h-48 flex flex-col items-center justify-center relative">
                             <div className="absolute inset-0 rounded-full border border-white/20 animate-[spin_10s_linear_infinite]" />
                             <div className="absolute inset-4 rounded-full border border-cyan-500/30 animate-[spin_5s_linear_infinite_reverse]" />
-                            <h3 className="font-bold text-xl mb-1">NWB</h3>
+                            <h3 className="font-bold text-xl mb-1 text-white">NWB</h3>
                             <p className="text-xs text-cyan-400">Core Engine</p>
                         </div>
 
@@ -204,7 +204,7 @@ export default function LendingPlatform() {
             <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-20">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">End-to-end loan lifecycle.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">End-to-end loan lifecycle.</h2>
                         <p className="text-xl text-gray-600">
                             Manage everything from origination to collections on a single dashboard.
                         </p>

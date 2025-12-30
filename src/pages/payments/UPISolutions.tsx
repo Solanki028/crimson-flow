@@ -48,9 +48,9 @@ export default function UPISolutions() {
                                 <span className="text-sm font-medium text-indigo-700">Next Gen UPI Stack</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Empower your Business with <br />
-                                <span className="text-indigo-600">Unified Payments</span>
+                                <span className="text-secondary">Unified Payments</span>
                             </h1>
 
                             <div className="text-xl text-gray-600 mb-8 h-8 flex items-center gap-2">
@@ -62,7 +62,7 @@ export default function UPISolutions() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link to="/contact">
-                                    <Button className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
+                                    <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
                                         Get Started
                                         <ArrowRight className="w-5 h-5 ml-2" />
                                     </Button>
@@ -164,7 +164,7 @@ export default function UPISolutions() {
             <section className="py-24 bg-white overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Seamless Intent Flow</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">Seamless Intent Flow</h2>
                         <p className="text-xl text-gray-600">
                             Direct App-to-App payments with highest success rates in the industry.
                         </p>
@@ -215,7 +215,7 @@ export default function UPISolutions() {
             <section className="py-24 bg-gray-50 border-y border-gray-100">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Why switch to NWB UPI?</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">Why switch to NWB UPI?</h2>
                         <p className="text-xl text-gray-600">
                             We don't just process payments; we help you grow with data-driven insights.
                         </p>

@@ -48,18 +48,18 @@ export const StickyScrollSection = () => {
               className="mb-20 lg:mb-0 lg:h-screen lg:flex lg:flex-col lg:justify-center"
             >
               {/* <span className="text-blue-600 font-semibold mb-4 block text-sm tracking-wider uppercase">WHY NWB</span> */}
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
                 Powering the Future of{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Finance</span>
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Finance</span>
               </h2>
               <div className="mb-6">
                 <img
                   src="/stats-visuals.png"
                   alt="NWB Platform Dashboard"
-                  className="w-full max-w-md h-auto rounded-xl shadow-lg border border-gray-200"
+                  className="w-full max-w-md h-auto rounded-xl shadow-lg border border-border"
                 />
               </div>
-              <p className="text-lg text-gray-600 max-w-xl">
+              <p className="text-lg text-muted-foreground max-w-xl">
                 Our platform combines cutting-edge technology with battle-tested reliability
                 to deliver the infrastructure your business needs.
               </p>
@@ -75,21 +75,21 @@ export const StickyScrollSection = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="lg:h-screen lg:flex lg:flex-col lg:justify-center"
               >
-                <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center mb-6">
-                    <feature.icon className="w-7 h-7 text-blue-600" />
+                <div className="bg-card rounded-2xl p-8 shadow-sm border border-border hover:shadow-lg transition-shadow">
+                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
+                    <feature.icon className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                  <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
                     {feature.description}
                   </p>
                   <ul className="space-y-3">
                     {feature.highlights.map((highlight) => (
                       <li key={highlight} className="flex items-center gap-3">
-                        <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                        <span className="text-gray-700">{highlight}</span>
+                        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                        <span className="text-foreground/80">{highlight}</span>
                       </li>
                     ))}
                   </ul>
@@ -106,17 +106,17 @@ export const StickyScrollSection = () => {
                 className="relative w-full"
               >
                 {/* Enhanced Banking Dashboard Mockup */}
-                <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
+                <div className="bg-white rounded-3xl shadow-2xl border border-border overflow-hidden">
                   {/* Browser Chrome */}
-                  <div className="bg-gray-50 border-b border-gray-200 px-4 py-3 flex items-center gap-3">
+                  <div className="bg-muted/50 border-b border-border px-4 py-3 flex items-center gap-3">
                     <div className="flex gap-2">
                       <div className="w-3 h-3 rounded-full bg-red-400" />
                       <div className="w-3 h-3 rounded-full bg-yellow-400" />
                       <div className="w-3 h-3 rounded-full bg-green-400" />
                     </div>
                     <div className="flex-1 flex items-center gap-2">
-                      <div className="flex-1 bg-white rounded-lg px-4 py-1.5 text-xs text-gray-500 border border-gray-200 flex items-center gap-2">
-                        <svg className="w-3 h-3 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <div className="flex-1 bg-background rounded-lg px-4 py-1.5 text-xs text-muted-foreground border border-border flex items-center gap-2">
+                        <svg className="w-3 h-3 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                         </svg>
                         dashboard.NWB.com
@@ -125,16 +125,16 @@ export const StickyScrollSection = () => {
                   </div>
 
                   {/* Dashboard Content */}
-                  <div className="p-8 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+                  <div className="p-8 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
                     {/* Header */}
                     <div className="flex items-center justify-between mb-6">
                       <div>
-                        <h3 className="text-lg font-bold text-gray-900">Banking Dashboard</h3>
-                        <p className="text-sm text-gray-600">Real-time transaction monitoring</p>
+                        <h3 className="text-lg font-bold text-foreground">Banking Dashboard</h3>
+                        <p className="text-sm text-muted-foreground">Real-time transaction monitoring</p>
                       </div>
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                        <span className="text-xs text-gray-600">Live</span>
+                        <span className="text-xs text-muted-foreground">Live</span>
                       </div>
                     </div>
 
@@ -150,10 +150,10 @@ export const StickyScrollSection = () => {
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: i * 0.1 }}
-                          className="bg-white rounded-xl p-4 shadow-sm border border-gray-100"
+                          className="bg-card rounded-xl p-4 shadow-sm border border-border"
                         >
-                          <div className="text-xs text-gray-500 mb-2">{stat.label}</div>
-                          <div className="text-xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                          <div className="text-xs text-muted-foreground mb-2">{stat.label}</div>
+                          <div className="text-xl font-bold text-foreground mb-1">{stat.value}</div>
                           <div className="flex items-center gap-1">
                             <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
@@ -165,10 +165,10 @@ export const StickyScrollSection = () => {
                     </div>
 
                     {/* Chart */}
-                    <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 mb-6">
+                    <div className="bg-card rounded-xl p-5 shadow-sm border border-border mb-6">
                       <div className="flex items-center justify-between mb-4">
-                        <div className="text-sm font-semibold text-gray-900">Transaction Volume</div>
-                        <div className="text-xs text-gray-500">Last 7 days</div>
+                        <div className="text-sm font-semibold text-foreground">Transaction Volume</div>
+                        <div className="text-xs text-muted-foreground">Last 7 days</div>
                       </div>
                       <div className="h-40 flex items-end justify-between gap-2">
                         {[65, 75, 55, 85, 70, 90, 80].map((height, i) => (
@@ -179,11 +179,11 @@ export const StickyScrollSection = () => {
                             animate={{ height: 'auto' }}
                             transition={{ delay: 0.5 + i * 0.1 }}
                           >
-                            <div 
-                              className="w-full rounded-t-lg bg-gradient-to-t from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 transition-colors cursor-pointer"
+                            <div
+                              className="w-full rounded-t-lg bg-gradient-to-t from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 transition-colors cursor-pointer"
                               style={{ height: `${height}%` }}
                             />
-                            <div className="text-[10px] text-gray-500 font-medium">
+                            <div className="text-[10px] text-muted-foreground font-medium">
                               {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][i]}
                             </div>
                           </motion.div>
@@ -192,8 +192,8 @@ export const StickyScrollSection = () => {
                     </div>
 
                     {/* Recent Transactions */}
-                    <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-                      <div className="text-sm font-semibold text-gray-900 mb-4">Recent Activity</div>
+                    <div className="bg-card rounded-xl p-5 shadow-sm border border-border">
+                      <div className="text-sm font-semibold text-foreground mb-4">Recent Activity</div>
                       <div className="space-y-3">
                         {[
                           { type: 'UPI', amount: '$1,245', status: 'completed', time: '2m ago' },
@@ -205,12 +205,11 @@ export const StickyScrollSection = () => {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.8 + i * 0.1 }}
-                            className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0"
+                            className="flex items-center justify-between py-2 border-b border-border last:border-0"
                           >
                             <div className="flex items-center gap-3">
-                              <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
-                                tx.status === 'completed' ? 'bg-green-100' : 'bg-yellow-100'
-                              }`}>
+                              <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${tx.status === 'completed' ? 'bg-green-100' : 'bg-yellow-100'
+                                }`}>
                                 {tx.status === 'completed' ? (
                                   <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -223,11 +222,11 @@ export const StickyScrollSection = () => {
                                 )}
                               </div>
                               <div>
-                                <div className="text-sm font-medium text-gray-900">{tx.type} Payment</div>
-                                <div className="text-xs text-gray-500">{tx.time}</div>
+                                <div className="text-sm font-medium text-foreground">{tx.type} Payment</div>
+                                <div className="text-xs text-muted-foreground">{tx.time}</div>
                               </div>
                             </div>
-                            <div className="text-sm font-semibold text-gray-900">{tx.amount}</div>
+                            <div className="text-sm font-semibold text-foreground">{tx.amount}</div>
                           </motion.div>
                         ))}
                       </div>
@@ -237,12 +236,12 @@ export const StickyScrollSection = () => {
 
                 {/* Floating Elements */}
                 <motion.div
-                  className="absolute -top-8 -right-8 w-24 h-24 rounded-2xl bg-blue-200/30 blur-2xl"
+                  className="absolute -top-8 -right-8 w-24 h-24 rounded-2xl bg-primary/20 blur-2xl"
                   animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
                   transition={{ duration: 4, repeat: Infinity }}
                 />
                 <motion.div
-                  className="absolute -bottom-8 -left-8 w-32 h-32 rounded-2xl bg-indigo-200/30 blur-2xl"
+                  className="absolute -bottom-8 -left-8 w-32 h-32 rounded-2xl bg-secondary/20 blur-2xl"
                   animate={{ scale: [1.2, 1, 1.2], opacity: [0.3, 0.6, 0.3] }}
                   transition={{ duration: 5, repeat: Infinity }}
                 />
@@ -252,33 +251,33 @@ export const StickyScrollSection = () => {
 
           {/* Mobile Dashboard Preview */}
           <div className="lg:hidden mt-12">
-            <div className="rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-xl">
-              <div className="bg-gray-50 px-4 py-3 border-b border-gray-200 flex items-center gap-2">
+            <div className="rounded-2xl overflow-hidden border border-border bg-card shadow-xl">
+              <div className="bg-muted/50 px-4 py-3 border-b border-border flex items-center gap-2">
                 <div className="flex gap-1.5">
                   <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
                   <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
                 </div>
               </div>
-              <div className="p-6 bg-gradient-to-br from-blue-50 to-white space-y-4">
+              <div className="p-6 bg-gradient-to-br from-primary/5 to-background space-y-4">
                 <div className="grid grid-cols-3 gap-3">
                   {[
                     { label: 'Volume', value: '$2.4M' },
                     { label: 'Txns', value: '14K' },
                     { label: 'Rate', value: '99.8%' },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-white p-3 rounded-xl shadow-sm border border-gray-100 text-center">
-                      <p className="text-xs text-gray-500">{stat.label}</p>
-                      <p className="text-sm font-bold text-gray-900 mt-1">{stat.value}</p>
+                    <div key={stat.label} className="bg-card p-3 rounded-xl shadow-sm border border-border text-center">
+                      <p className="text-xs text-muted-foreground">{stat.label}</p>
+                      <p className="text-sm font-bold text-foreground mt-1">{stat.value}</p>
                     </div>
                   ))}
                 </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+                <div className="bg-card rounded-xl p-4 shadow-sm border border-border">
                   <div className="h-32 flex items-end justify-between gap-1">
                     {[40, 65, 45, 80, 55, 90, 70, 85].map((height, i) => (
                       <div
                         key={i}
-                        className="flex-1 rounded-t-sm bg-gradient-to-t from-blue-500 to-indigo-500"
+                        className="flex-1 rounded-t-sm bg-gradient-to-t from-primary to-secondary"
                         style={{ height: `${height}%` }}
                       />
                     ))}

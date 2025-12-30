@@ -34,7 +34,7 @@ export default function SimpliCollect() {
                                     <div className="p-6">
                                         <div className="flex justify-between items-center mb-6">
                                             <div>
-                                                <h3 className="font-bold text-gray-900">Reconciliation Status</h3>
+                                                <h3 className="font-bold text-primary">Reconciliation Status</h3>
                                                 <p className="text-xs text-gray-500">Real-time sync active</p>
                                             </div>
                                             <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
@@ -99,7 +99,7 @@ export default function SimpliCollect() {
                                 <span className="text-sm font-medium text-indigo-700">Automated Reconciliation</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 SimpliCollect <br />
                                 <span className="text-indigo-600">Automate Everything</span>
                             </h1>
@@ -115,7 +115,7 @@ export default function SimpliCollect() {
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link to="/contact">
-                                    <Button className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
+                                    <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
                                         Request Demo
                                         <ArrowRight className="w-5 h-5 ml-2" />
                                     </Button>
@@ -142,7 +142,7 @@ export default function SimpliCollect() {
                         <div className="inline-block px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold mb-4">
                             Powerful Analytics
                         </div>
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">See where your money is.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-4">See where your money is.</h2>
                         <p className="text-xl text-gray-600">
                             Our dashboard gives you a bird's eye view of all your collections, settlements, and pending reconciliations in real-time.
                         </p>

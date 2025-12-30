@@ -23,9 +23,9 @@ export default function DigitalWallets() {
                                 <span className="text-sm font-medium text-orange-700">Mobile First</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+                            <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6">
                                 One Tap. <br />
-                                <span className="text-orange-600">Done.</span>
+                                <span className="text-accent">Done.</span>
                             </h1>
 
                             <div className="flex justify-center mb-10">
@@ -37,7 +37,7 @@ export default function DigitalWallets() {
                                 Pre-integrated with India's leading digital wallets for instant payments.
                             </p>
 
-                            <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all hover:scale-105">
+                            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all hover:scale-105">
                                 Integrate Wallets
                                 <ArrowRight className="w-5 h-5 ml-2" />
                             </Button>
@@ -101,7 +101,7 @@ export default function DigitalWallets() {
             <section className="py-24 bg-orange-50 border-y border-orange-100/50">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Why customers love wallets.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">Why customers love wallets.</h2>
                         <p className="text-xl text-gray-600">
                             Remove friction from value-shoppers. Wallets users convert 20% higher than card users.
                         </p>
@@ -138,7 +138,7 @@ export default function DigitalWallets() {
                             </p>
 
                             <div className="flex justify-center gap-4">
-                                <Button className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
+                                <Button className="bg-white text-primary hover:bg-orange-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
                                     Start Integration
                                 </Button>
                             </div>

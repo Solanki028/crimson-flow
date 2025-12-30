@@ -56,15 +56,15 @@ export default function PaymentGateway() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-[#0A0F1C] text-white">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-white text-foreground">
         {/* Global Network Background Effect */}
-        <div className="absolute inset-0 z-0 opacity-20">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/40 via-[#0A0F1C] to-[#0A0F1C]" />
+        <div className="absolute inset-0 z-0 opacity-40">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100/60 via-white to-white" />
           {/* Animated Dots/Network */}
           {Array.from({ length: 20 }).map((_, i) => (
             <motion.div
               key={i}
-              className="absolute bg-blue-500 rounded-full"
+              className="absolute bg-blue-400 rounded-full"
               style={{
                 width: Math.random() * 4 + 2 + 'px',
                 height: Math.random() * 4 + 2 + 'px',
@@ -72,8 +72,8 @@ export default function PaymentGateway() {
                 top: Math.random() * 100 + '%',
               }}
               animate={{
-                opacity: [0.2, 0.8, 0.2],
-                scale: [1, 1.5, 1],
+                opacity: [0.2, 0.6, 0.2],
+                scale: [1, 1.2, 1],
               }}
               transition={{
                 duration: Math.random() * 3 + 2,
@@ -92,37 +92,37 @@ export default function PaymentGateway() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6 backdrop-blur-md">
-                <Globe className="w-4 h-4 text-blue-400" />
-                <span className="text-sm font-medium text-blue-100">Global Payment Infrastructure</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 backdrop-blur-md">
+                <Globe className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Global Payment Infrastructure</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight text-gray-900">
                 Payments without <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">
                   Borders
                 </span>
               </h1>
 
-              <div className="text-xl text-gray-300 mb-8 h-8 flex items-center gap-2">
+              <div className="text-xl text-gray-600 mb-8 h-8 flex items-center gap-2">
                 <span>Accept</span>
-                <TypingText text="Cards. Wallets. Crypto. Bank Transfers." className="font-semibold text-white" delay={0.5} />
+                <TypingText text="Cards. Wallets. Crypto. Bank Transfers." className="font-semibold text-primary" delay={0.5} />
               </div>
 
-              <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-lg">
+              <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-lg">
                 The most reliable payment gateway in the world.
                 99.999% uptime, intelligent routing, and direct integrations with 100+ networks.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact">
-                  <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-900/20 transition-all font-semibold border-0">
+                  <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-primary/20 transition-all font-semibold border-0">
                     Start Integration
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
                 <Link to="/contact">
-                  <Button className="bg-transparent border border-white/20 text-white hover:bg-white/5 px-8 py-6 text-lg rounded-xl transition-all">
+                  <Button className="bg-transparent border border-gray-200 text-gray-900 hover:bg-gray-50 px-8 py-6 text-lg rounded-xl transition-all">
                     Contact Sales
                   </Button>
                 </Link>
@@ -184,9 +184,9 @@ export default function PaymentGateway() {
                     <div className="space-y-4">
                       <div>
                         <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">Card Number</label>
-                        <div className="h-12 bg-gray-50 rounded-lg border border-gray-200 flex items-center px-4 font-mono text-gray-800 text-lg relative transition-all focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent">
+                        <div className="h-12 bg-gray-50 rounded-lg border border-gray-200 flex items-center px-4 font-mono text-gray-800 text-lg relative transition-all focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent">
                           {cardNumber}
-                          {status === 'typing' && <span className="w-0.5 h-6 bg-blue-500 animate-pulse absolute ml-[ch]" style={{ left: `${cardNumber.length + 1}ch` }}></span>}
+                          {status === 'typing' && <span className="w-0.5 h-6 bg-primary animate-pulse absolute ml-[ch]" style={{ left: `${cardNumber.length + 1}ch` }}></span>}
                           <CreditCard className="ml-auto w-5 h-5 text-gray-400" />
                         </div>
                       </div>
@@ -194,20 +194,20 @@ export default function PaymentGateway() {
                       <div className="grid grid-cols-2 gap-4">
                         <div>
                           <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">Expiry</label>
-                          <div className="h-12 bg-gray-50 rounded-lg border border-gray-200 flex items-center px-4 font-mono text-gray-800 text-lg transition-all focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent">
+                          <div className="h-12 bg-gray-50 rounded-lg border border-gray-200 flex items-center px-4 font-mono text-gray-800 text-lg transition-all focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent">
                             {expiry}
                           </div>
                         </div>
                         <div>
                           <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">CVC</label>
-                          <div className="h-12 bg-gray-50 rounded-lg border border-gray-200 flex items-center px-4 font-mono text-gray-800 text-lg transition-all focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-transparent">
+                          <div className="h-12 bg-gray-50 rounded-lg border border-gray-200 flex items-center px-4 font-mono text-gray-800 text-lg transition-all focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent">
                             {cvc.replace(/./g, '•')}
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <Button className="w-full bg-[#3b82f6] hover:bg-blue-600 h-12 mt-4 text-lg rounded-lg relative overflow-hidden transition-all shadow-lg hover:shadow-blue-500/30">
+                    <Button className="w-full bg-primary hover:bg-primary/90 h-12 mt-4 text-lg rounded-lg relative overflow-hidden transition-all shadow-lg hover:shadow-primary/30">
                       {status === 'processing' ? (
                         <div className="flex items-center gap-2">
                           <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
@@ -260,10 +260,10 @@ export default function PaymentGateway() {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
                 <Code className="w-6 h-6" />
               </div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6 font-display">
+              <h2 className="text-4xl font-bold text-primary mb-6 font-display">
                 Designed for Developers
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -313,7 +313,7 @@ console.log(confirmed.status); // 'succeeded'`}</code></pre>
                   animate={{ opacity: [0, 1, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  <div className="w-3 h-5 bg-blue-500" />
+                  <div className="w-3 h-5 bg-primary" />
                 </motion.div>
               </div>
             </div>
@@ -336,9 +336,9 @@ console.log(confirmed.status); // 'succeeded'`}</code></pre>
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:-translate-y-1 transition-transform duration-300"
+                className="bg-white p-6 rounded-2xl shadow-sm border border-border flex items-center gap-4 hover:-translate-y-1 transition-transform duration-300"
               >
-                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
                   <stat.icon className="w-6 h-6" />
                 </div>
                 <div>

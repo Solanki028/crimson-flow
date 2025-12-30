@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { 
-  Zap, 
-  Shield, 
-  TrendingUp, 
+import {
+  Zap,
+  Shield,
+  TrendingUp,
   Clock,
   CheckCircle,
   Users,
@@ -19,42 +19,42 @@ const whyFeatures = [
     icon: CreditCard,
     title: 'Multi-mode Payment Options',
     description: 'Now you can seamlessly process payments using various methods, such as IMPS, NEFT, RTGS, and UPI, ensuring flexibility of options.',
-    color: 'from-blue-500 to-indigo-500',
+    color: 'from-primary to-secondary',
     mockup: 'payment-options',
   },
   {
     icon: Clock,
     title: 'Real Time Insight',
     description: 'Gain immediate access to transactional data, providing valuable insights that improve cash flow management & support informed business decisions.',
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-secondary to-purple-500',
     mockup: 'real-time',
   },
   {
     icon: BarChart3,
     title: 'Collection Tracking & Reconciliation',
     description: 'Utilise our innovative APIs to track, find, & reconcile any transaction, enhancing accuracy and transparency in your financial operations.',
-    color: 'from-green-500 to-emerald-500',
+    color: 'from-accent to-red-500',
     mockup: 'tracking',
   },
   {
     icon: Shield,
     title: 'Bank-Grade Security',
     description: 'Enterprise security that exceeds compliance standards. End-to-end encryption, fraud detection, and comprehensive audit trails.',
-    color: 'from-orange-500 to-red-500',
+    color: 'from-orange-500 to-accent',
     mockup: 'security',
   },
   {
     icon: Zap,
     title: 'Lightning-Fast Processing',
     description: 'Process thousands of transactions per second with sub-50ms latency. Real-time settlement and instant confirmations.',
-    color: 'from-cyan-500 to-blue-500',
+    color: 'from-primary to-blue-500',
     mockup: 'speed',
   },
   {
     icon: Users,
     title: '24/7 Expert Support',
     description: 'Dedicated support team available round the clock. Quick resolution times and personalized assistance for your business needs.',
-    color: 'from-indigo-500 to-purple-500',
+    color: 'from-secondary to-indigo-500',
     mockup: 'support',
   },
 ];
@@ -65,7 +65,7 @@ const PaymentOptionsMockup = () => (
     <div className="space-y-4">
       <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
         <div className="flex items-center justify-center mb-4">
-          <div className="w-32 h-48 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl shadow-xl flex items-center justify-center relative overflow-hidden">
+          <div className="w-32 h-48 bg-gradient-to-br from-primary to-secondary rounded-2xl shadow-xl flex items-center justify-center relative overflow-hidden">
             <div className="absolute top-4 left-4 right-4">
               <div className="bg-white/20 rounded-lg p-2 backdrop-blur-sm">
                 <div className="h-2 bg-white/50 rounded w-16 mb-2" />
@@ -84,7 +84,7 @@ const PaymentOptionsMockup = () => (
           </div>
         </div>
       </div>
-      
+
       <div className="grid grid-cols-4 gap-2">
         {[
           { name: 'NEFT', color: 'red' },
@@ -115,7 +115,7 @@ const RealTimeInsightMockup = () => (
             <span className="text-xs text-green-600 font-semibold">Live</span>
           </div>
         </div>
-        
+
         <div className="mb-4">
           <p className="text-2xl font-bold text-gray-900">₹1,24,580</p>
           <p className="text-xs text-green-600 font-semibold">+18.5% from yesterday</p>
@@ -124,7 +124,7 @@ const RealTimeInsightMockup = () => (
         <div className="h-24 flex items-end justify-between gap-1">
           {[30, 45, 35, 60, 50, 70, 55, 80, 65, 75, 60, 85].map((height, i) => (
             <div key={i} className="flex-1 flex flex-col items-center">
-              <div 
+              <div
                 className="w-full rounded-t bg-gradient-to-t from-purple-500 to-pink-500"
                 style={{ height: `${height}%` }}
               />
@@ -161,7 +161,7 @@ const TrackingMockup = () => (
             <BarChart3 className="w-4 h-4 text-green-600" />
           </div>
         </div>
-        
+
         <div className="space-y-2">
           {[
             { product: 'Product A', status: 'Paid', price: '₹12,450', order: '#ORD-001' },
@@ -174,9 +174,8 @@ const TrackingMockup = () => (
                 <p className="text-[10px] text-gray-500">{item.order}</p>
               </div>
               <div className="flex items-center gap-3">
-                <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${
-                  item.status === 'Paid' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'
-                }`}>
+                <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${item.status === 'Paid' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'
+                  }`}>
                   {item.status}
                 </span>
                 <p className="text-xs font-bold text-gray-900 w-16 text-right">{item.price}</p>
@@ -294,9 +293,8 @@ const SupportMockup = () => (
             { time: '10:32 AM', msg: 'I\'ll assist you right away!', type: 'received' },
           ].map((chat, i) => (
             <div key={i} className={`flex ${chat.type === 'sent' ? 'justify-end' : 'justify-start'}`}>
-              <div className={`max-w-[80%] rounded-lg p-2 ${
-                chat.type === 'sent' ? 'bg-indigo-500 text-white' : 'bg-gray-100 text-gray-900'
-              }`}>
+              <div className={`max-w-[80%] rounded-lg p-2 ${chat.type === 'sent' ? 'bg-indigo-500 text-white' : 'bg-gray-100 text-gray-900'
+                }`}>
                 <p className="text-xs">{chat.msg}</p>
                 <p className={`text-[9px] mt-1 ${chat.type === 'sent' ? 'text-indigo-100' : 'text-gray-500'}`}>
                   {chat.time}
@@ -353,10 +351,10 @@ export const WhyNWBSection = () => {
           {/* <span className="text-blue-600 font-semibold mb-4 block text-sm tracking-wider uppercase">WHY NWB</span> */}
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
             Why Choose{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">NWB?</span>
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">NWB?</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Experience the future of digital finance with our comprehensive suite of features designed 
+            Experience the future of digital finance with our comprehensive suite of features designed
             to streamline your operations and accelerate growth.
           </p>
         </motion.div>
@@ -365,7 +363,7 @@ export const WhyNWBSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {whyFeatures.map((feature, index) => {
             const MockupComponent = mockupComponents[feature.mockup];
-            
+
             return (
               <motion.div
                 key={feature.title}

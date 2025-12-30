@@ -36,7 +36,7 @@ export default function WealthManagement() {
                                 <span className="text-sm font-medium text-yellow-700">Digital Wealth</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Invest. Grow. <br />
                                 <span className="text-yellow-600">Prosper.</span>
                             </h1>
@@ -128,7 +128,7 @@ export default function WealthManagement() {
             <section className="py-24 bg-yellow-50 border-y border-yellow-100">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">One API, infinite assets.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">One API, infinite assets.</h2>
                         <p className="text-xl text-gray-600">
                             Give your users access to the entire financial market. We handle the brokerage and custody.
                         </p>
@@ -142,7 +142,7 @@ export default function WealthManagement() {
                             { title: "US Stocks", yield: "Variable", risk: "High" }
                         ].map((asset, i) => (
                             <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-yellow-100 hover:shadow-md transition-shadow">
-                                <h3 className="text-lg font-bold text-gray-900 mb-2">{asset.title}</h3>
+                                <h3 className="text-lg font-bold text-primary mb-2">{asset.title}</h3>
                                 <div className="flex justify-between items-center text-sm">
                                     <span className="text-gray-500">Avg. Yield</span>
                                     <span className="font-bold text-green-600">{asset.yield}</span>

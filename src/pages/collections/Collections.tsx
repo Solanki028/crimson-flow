@@ -334,23 +334,23 @@ export default function Collections() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-200 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10 mb-8"
             >
-              <CreditCard className="w-4 h-4 text-blue-600" />
-              <span className="text-sm font-medium text-blue-700">UPI Collections Suite</span>
+              <CreditCard className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">UPI Collections Suite</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-6"
               style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}
             >
               Smart{' '}
               <TypingText
                 text="UPI Collections"
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
                 delay={0.5}
               />
               {' '}for Modern Businesses
@@ -372,7 +372,7 @@ export default function Collections() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Button className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <Button className="group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all">
                 <span>Start Collecting</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -415,10 +415,10 @@ export default function Collections() {
             transition={{ duration: 0.6 }}
             className="text-center mb-20"
           >
-            <span className="text-blue-600 font-semibold mb-4 block text-sm tracking-wider uppercase">COLLECTION SOLUTIONS</span>
+            <span className="text-secondary font-semibold mb-4 block text-sm tracking-wider uppercase">COLLECTION SOLUTIONS</span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
               Choose the right{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">collection method</span>
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">collection method</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Four powerful UPI collection solutions designed for different business needs and customer preferences.
@@ -438,13 +438,13 @@ export default function Collections() {
               >
                 {/* Content */}
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center mb-6 shadow-sm">
-                    <collection.icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mb-6 shadow-sm">
+                    <collection.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                     {collection.title}
                   </h3>
-                  <p className="text-blue-600 font-semibold mb-4">{collection.subtitle}</p>
+                  <p className="text-secondary font-semibold mb-4">{collection.subtitle}</p>
                   <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                     {collection.description}
                   </p>
@@ -455,7 +455,7 @@ export default function Collections() {
                       <ul className="space-y-3">
                         {collection.features.map((feature) => (
                           <li key={feature} className="flex items-center gap-3">
-                            <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                            <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                             <span className="text-gray-700">{feature}</span>
                           </li>
                         ))}
@@ -475,7 +475,7 @@ export default function Collections() {
                   </div>
 
                   <Link to={collection.link}>
-                    <Button className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <Button className="group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all">
                       <span>Learn More</span>
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -509,7 +509,7 @@ export default function Collections() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600">
+      <section className="relative py-32 overflow-hidden bg-gradient-to-br from-primary via-navy to-deep-navy">
         <div className="absolute inset-0">
           <motion.div
             className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white/10 blur-3xl"
@@ -540,7 +540,7 @@ export default function Collections() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact">
-                <Button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all font-semibold">
+                <Button className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all font-semibold">
                   <span>Get Started Today</span>
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>

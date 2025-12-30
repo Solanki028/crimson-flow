@@ -29,9 +29,9 @@ export default function UPICollection() {
                                 <span className="text-sm font-medium text-blue-700">Live on UPI 2.0</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Collection <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                                     Reimagined
                                 </span>
                             </h1>
@@ -48,7 +48,7 @@ export default function UPICollection() {
 
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link to="/contact">
-                                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-1">
+                                    <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-primary/25 transition-all duration-300 transform hover:-translate-y-1">
                                         Start Collecting
                                         <ArrowRight className="w-5 h-5 ml-2" />
                                     </Button>
@@ -86,7 +86,7 @@ export default function UPICollection() {
                                         <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
                                         <div className="text-center text-white relative z-10">
                                             <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full mx-auto mb-4 flex items-center justify-center border border-white/30">
-                                                <check className="w-8 h-8 text-white" />
+                                                <CheckCircle className="w-8 h-8 text-white" />
                                                 <CheckCircle className="w-8 h-8 text-white" />
                                             </div>
                                             <h2 className="text-xl font-bold mb-1">Payment Successful</h2>
@@ -154,7 +154,7 @@ export default function UPICollection() {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-2xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Everything needed for UPI</h2>
+                        <h2 className="text-3xl font-bold text-primary mb-4">Everything needed for UPI</h2>
                         <p className="text-gray-600">Complete stack for all your UPI collection needs, from dynamic QR to deep links.</p>
                     </div>
 
@@ -205,7 +205,7 @@ export default function UPICollection() {
                             <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-6">
                                 Developer Friendly
                             </div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">Integration in minutes, not weeks.</h2>
+                            <h2 className="text-4xl font-bold text-primary mb-6">Integration in minutes, not weeks.</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                                 Our SDKs are designed for drop-in integration. With just a few lines of code,
                                 you can start accepting UPI payments with real-time webhooks and callbacks.
@@ -279,7 +279,7 @@ export default function UPICollection() {
 
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Link to="/contact">
-                                    <Button className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
+                                    <Button className="bg-white text-primary hover:bg-blue-50 px-8 py-6 text-lg rounded-xl font-bold shadow-lg">
                                         Get Started Now
                                     </Button>
                                 </Link>

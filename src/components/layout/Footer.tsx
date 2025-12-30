@@ -65,12 +65,7 @@ export const Footer = () => {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                <span className="font-display font-bold text-xl text-primary-foreground">S</span>
-              </div>
-              <span className="font-display font-semibold text-xl text-foreground">
-                <span className="text-primary">NWB</span>
-              </span>
+              <img src="/logo.png" alt="NWB Logo" className="h-12 w-auto object-contain" />
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Next-generation fintech infrastructure powering the future of digital finance.

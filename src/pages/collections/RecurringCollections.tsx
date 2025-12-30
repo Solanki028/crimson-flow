@@ -25,9 +25,9 @@ export default function RecurringCollections() {
                                 <span className="text-sm font-medium text-green-700">Subscription Engine</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Predictable Revenue <br />
-                                <span className="text-green-600">On Autopilot</span>
+                                <span className="text-secondary">On Autopilot</span>
                             </h1>
 
                             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -36,7 +36,7 @@ export default function RecurringCollections() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
+                                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg transition-all">
                                     Set up Autopay
                                     <ArrowRight className="w-5 h-5 ml-2" />
                                 </Button>
@@ -125,7 +125,7 @@ export default function RecurringCollections() {
                             <div className="inline-block px-4 py-1.5 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-6">
                                 End-to-End Automation
                             </div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">Designed for retention.</h2>
+                            <h2 className="text-4xl font-bold text-primary mb-6">Designed for retention.</h2>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                                 Recover failed payments automatically with smart retries. Get notified instantly when a mandate is paused or cancelled.
                             </p>
@@ -203,11 +203,11 @@ export default function RecurringCollections() {
 
                     <div className="flex justify-center gap-4">
                         <Link to="/contact">
-                            <Button className="bg-white text-green-900 hover:bg-green-50 px-8 py-4 text-lg rounded-xl font-bold shadow-lg">
+                            <Button className="bg-white text-primary hover:bg-blue-50 px-8 py-4 text-lg rounded-xl font-bold shadow-lg">
                                 Get Started
                             </Button>
                         </Link>
-                        <Button variant="outline" className="border-green-400 text-white hover:bg-green-800/50 px-8 py-4 text-lg rounded-xl font-semibold backdrop-blur-sm">
+                        <Button variant="outline" className="border-secondary text-white hover:bg-white/10 px-8 py-4 text-lg rounded-xl font-semibold backdrop-blur-sm">
                             View Pricing
                         </Button>
                     </div>

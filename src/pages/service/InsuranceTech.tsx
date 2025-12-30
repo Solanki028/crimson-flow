@@ -35,9 +35,9 @@ export default function InsuranceTech() {
                                 <span className="text-sm font-medium text-red-700">Digital Insurance Infrastructure</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
                                 Embed Insurance <br />
-                                <span className="text-red-600">In 2 Lines of Code</span>
+                                <span className="text-accent">In 2 Lines of Code</span>
                             </h1>
 
                             <div className="text-xl text-gray-600 mb-8 h-8 flex items-center gap-2">
@@ -152,7 +152,7 @@ export default function InsuranceTech() {
                             <Zap className="w-3 h-3 text-green-600" />
                             <span className="text-xs font-bold text-green-700 uppercase tracking-wider">Flash Claims</span>
                         </div>
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Claims settled in seconds.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">Claims settled in seconds.</h2>
                         <p className="text-xl text-gray-600">
                             Our parametric claims engine triggers payouts automatically based on trusted third-party data.
                         </p>
@@ -192,7 +192,7 @@ export default function InsuranceTech() {
             <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">Smarter underwriting.</h2>
+                        <h2 className="text-4xl font-bold text-primary mb-6">Smarter underwriting.</h2>
                         <p className="text-xl text-gray-600">
                             Move from static actuarial tables to dynamic, real-time risk assessment using alternative data.
                         </p>

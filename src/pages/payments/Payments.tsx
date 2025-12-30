@@ -434,13 +434,13 @@ export default function Payments() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-6"
               style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}
             >
               Accept Payments{' '}
               <TypingText
                 text="Everywhere"
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
                 delay={0.5}
               />
             </motion.h1>
@@ -462,7 +462,7 @@ export default function Payments() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
               <Link to="/contact">
-                <Button className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all">
+                <Button className="group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all">
                   <span>Start Accepting Payments</span>
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -507,9 +507,9 @@ export default function Payments() {
             className="text-center mb-20"
           >
             <span className="text-blue-600 font-semibold mb-4 block text-sm tracking-wider uppercase">PAYMENT SOLUTIONS</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
               Choose the right{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">payment method</span>
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">payment method</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Six comprehensive payment solutions designed for different business models and customer preferences.
@@ -532,7 +532,7 @@ export default function Payments() {
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center mb-6 shadow-sm">
                     <payment.icon className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                     {payment.title}
                   </h3>
                   <p className="text-blue-600 font-semibold mb-4">{payment.subtitle}</p>
@@ -566,7 +566,7 @@ export default function Payments() {
                   </div>
 
                   <Link to={payment.link}>
-                    <Button className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <Button className="group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all">
                       <span>Learn More</span>
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -598,7 +598,7 @@ export default function Payments() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600">
+      <section className="relative py-32 overflow-hidden bg-gradient-to-br from-primary via-secondary to-accent">
         <div className="absolute inset-0">
           <motion.div
             className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white/10 blur-3xl"

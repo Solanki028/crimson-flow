@@ -144,9 +144,9 @@ export default function QRCollection() {
                             <div className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 font-semibold rounded-full text-sm mb-6">
                                 Unified Payments
                             </div>
-                            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight font-sans">
+                            <h1 className="text-5xl md:text-7xl font-bold text-primary mb-6 leading-tight font-sans">
                                 One sample <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                                     QR Collection
                                 </span> <br />
                                 for Payments
@@ -156,11 +156,11 @@ export default function QRCollection() {
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <Link to="/contact">
-                                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
+                                    <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">
                                         Get Started
                                     </Button>
                                 </Link>
-                                <Button variant="ghost" className="text-blue-600 hover:bg-blue-50 px-8 py-6 text-lg rounded-full">
+                                <Button variant="ghost" className="text-primary hover:bg-primary/10 px-8 py-6 text-lg rounded-full">
                                     Contact Sales <ChevronRight className="ml-1 w-5 h-5" />
                                 </Button>
                             </div>
@@ -185,8 +185,8 @@ export default function QRCollection() {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Types of QR</h2>
-                        <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full" />
+                        <h2 className="text-4xl font-bold text-primary mb-4">Types of QR</h2>
+                        <div className="w-20 h-1.5 bg-primary mx-auto rounded-full" />
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-20">
@@ -231,7 +231,7 @@ export default function QRCollection() {
             <section className="py-24 bg-gray-50">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                        <h2 className="text-4xl font-bold text-primary mb-6">
                             QR Collection for Every Business
                         </h2>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -285,9 +285,9 @@ export default function QRCollection() {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-20 items-center">
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+                            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 leading-tight">
                                 Payments Made <br />
-                                <span className="text-blue-600">Simple & Secure</span>
+                                <span className="text-secondary">Simple & Secure</span>
                             </h2>
                             <div className="space-y-6">
                                 {[
@@ -360,12 +360,12 @@ export default function QRCollection() {
             <section className="py-24 bg-gradient-to-br from-gray-900 to-blue-900 text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform translate-x-20" />
                 <div className="container mx-auto px-6 relative z-10 text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to modernize your collections?</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Ready to modernize your collections?</h2>
                     <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
                         Get verified, set up your QR, and start accepting payments in less than 10 minutes.
                     </p>
                     <Link to="/contact">
-                        <Button className="bg-white text-blue-900 hover:bg-blue-50 px-10 py-8 text-xl rounded-full font-bold shadow-2xl transition-transform hover:scale-105">
+                        <Button className="bg-white text-primary hover:bg-blue-50 px-10 py-8 text-xl rounded-full font-bold shadow-2xl transition-transform hover:scale-105">
                             Create Free Account
                         </Button>
                     </Link>

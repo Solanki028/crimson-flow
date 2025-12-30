@@ -18,22 +18,23 @@ export default function About() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.6 }}
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8"
                         >
-                            <Award className="w-4 h-4 text-blue-600" />
-                            <span className="text-sm font-bold text-blue-700 uppercase tracking-wider">Our Mission</span>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
+                                <Award className="w-4 h-4 text-primary" />
+                                <span className="text-sm font-bold text-primary uppercase tracking-wider">Our Mission</span>
+                            </div>
                         </motion.div>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
                             Building the <br />
-                            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Backbone of Finance</span>
+                            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Backbone of Finance</span>
                         </h1>
 
                         <div className="text-2xl text-gray-600 mb-10 leading-relaxed font-light">
                             We’re on a mission to simplify money movement for <br />
                             <TypingText
                                 text={["startups.", "enterprises.", "banks.", "platforms."]}
-                                className="font-semibold text-gray-900"
+                                className="font-semibold text-primary"
                                 delay={1}
                                 typingSpeed={100}
                                 deletingSpeed={50}
@@ -92,24 +93,24 @@ export default function About() {
                                     transition={{ delay: i * 0.2 }}
                                 >
                                     {/* Dot for mobile / Timeline center for desktop could be complex, keeping simple list layout but impactful */}
-                                    <div className="absolute left-[-5px] top-0 w-3 h-3 rounded-full bg-blue-600 ring-4 ring-white md:hidden"></div>
+                                    <div className="absolute left-[-5px] top-0 w-3 h-3 rounded-full bg-primary ring-4 ring-white md:hidden"></div>
 
                                     <div className="md:flex items-start gap-8 group">
                                         <div className="hidden md:flex w-32 flex-col items-end text-right pt-2">
-                                            <span className="text-2xl font-bold text-blue-600">{item.year}</span>
+                                            <span className="text-2xl font-bold text-primary">{item.year}</span>
                                         </div>
 
                                         {/* Center Icon (Desktop) */}
                                         <div className="hidden md:flex flex-col items-center relative z-10">
-                                            <div className="w-12 h-12 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                                            <div className="w-12 h-12 rounded-full bg-primary/5 border border-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                                 <item.icon className="w-5 h-5" />
                                             </div>
                                             {i !== 3 && <div className="h-full w-0.5 bg-gray-100 absolute top-12 mt-4"></div>}
                                         </div>
 
                                         <div className="flex-1 pb-12">
-                                            <span className="md:hidden text-xl font-bold text-blue-600 mb-2 block">{item.year}</span>
-                                            <h3 className="text-2xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                                            <span className="md:hidden text-xl font-bold text-primary mb-2 block">{item.year}</span>
+                                            <h3 className="text-2xl font-bold text-primary mb-3">{item.title}</h3>
                                             <p className="text-gray-600 text-lg leading-relaxed">{item.desc}</p>
                                         </div>
                                     </div>
@@ -121,11 +122,11 @@ export default function About() {
             </section>
 
             {/* Values */}
-            <section className="py-24 bg-gray-900 text-white relative overflow-hidden">
+            <section className="py-24 bg-[#8b5cf6] text-white relative overflow-hidden">
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-6">Values that drive us</h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        <p className="text-purple-50 max-w-2xl mx-auto text-lg">
                             We're building a company for the long term, guided by principles that put our customers first.
                         </p>
                     </div>
@@ -136,19 +137,19 @@ export default function About() {
                             { title: "Think Big", desc: "We create and communicate a bold direction that inspires results.", icon: Target },
                             { title: "Earn Trust", desc: "We listen attentively, speak candidly, and treat others respectfully.", icon: Users },
                         ].map((card, i) => (
-                            <div key={i} className="bg-white/5 backdrop-blur-lg border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
-                                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400">
+                            <div key={i} className="bg-white/10 backdrop-blur-lg border border-white/20 p-8 rounded-2xl hover:bg-white/15 transition-colors">
+                                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-6 text-white">
                                     <card.icon className="w-6 h-6" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">{card.title}</h3>
-                                <p className="text-gray-400 leading-relaxed">{card.desc}</p>
+                                <p className="text-purple-50 leading-relaxed">{card.desc}</p>
                             </div>
                         ))}
                     </div>
                 </div>
 
                 {/* Abstract Grid Background */}
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e5_1px,transparent_1px),linear-gradient(to_bottom,#4f46e5_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-10 pointer-events-none"></div>
             </section>
 
             <Footer />

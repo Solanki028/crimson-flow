@@ -304,7 +304,7 @@ export default function Service() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-6"
               style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}
             >
               Complete{' '}
@@ -378,7 +378,7 @@ export default function Service() {
             className="text-center mb-20"
           >
             <span className="text-blue-600 font-semibold mb-4 block text-sm tracking-wider uppercase">FINANCIAL SERVICES</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
               Comprehensive{' '}
               <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">service solutions</span>
             </h2>
@@ -403,7 +403,7 @@ export default function Service() {
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center mb-6 shadow-sm">
                     <service.icon className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                     {service.title}
                   </h3>
                   <p className="text-blue-600 font-semibold mb-4">{service.subtitle}</p>
@@ -413,7 +413,7 @@ export default function Service() {
 
                   <div className="grid md:grid-cols-2 gap-6 mb-8">
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-4">Key Features</h4>
+                      <h4 className="font-semibold text-primary mb-4">Key Features</h4>
                       <ul className="space-y-3">
                         {service.features.map((feature) => (
                           <li key={feature} className="flex items-center gap-3">
@@ -424,7 +424,7 @@ export default function Service() {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-4">Benefits</h4>
+                      <h4 className="font-semibold text-primary mb-4">Benefits</h4>
                       <ul className="space-y-3">
                         {service.benefits.map((benefit) => (
                           <li key={benefit} className="flex items-center gap-3">
