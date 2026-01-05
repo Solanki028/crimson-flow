@@ -74,17 +74,17 @@ const App = () => (
             <Route path="/analytics" element={<CategoryPage />} />
             <Route path="/wallets" element={<CategoryPage />} />
             <Route path="/automation" element={<CategoryPage />} />
-            
+
             {/* Collections Subcategories */}
-            <Route path="/collections/upi" element={<UPICollection />} />
+            <Route path="/collections/upi-collection" element={<UPICollection />} />
             <Route path="/collections/simpli-collect" element={<SimpliCollect />} />
             <Route path="/collections/recurring" element={<RecurringCollections />} />
-            <Route path="/collections/qr" element={<QRCollection />} />
+            <Route path="/collections/qr-collection" element={<QRCollection />} />
             <Route path="/collections/core-banking" element={<CoreBanking />} />
             <Route path="/collections/digital-lending" element={<DigitalLending />} />
             <Route path="/collections/compliance" element={<ComplianceRegulatory />} />
             <Route path="/collections/accounts" element={<AccountManagement />} />
-            
+
             {/* Payments Subcategories */}
             <Route path="/payments/gateway" element={<PaymentGateway />} />
             <Route path="/payments/upi" element={<UPISolutions />} />
@@ -92,14 +92,14 @@ const App = () => (
             <Route path="/payments/wallets" element={<DigitalWallets />} />
             <Route path="/payments/bnpl" element={<BNPL />} />
             <Route path="/payments/cross-border" element={<CrossBorderPayments />} />
-            
+
             {/* Travel Routes */}
             <Route path="/travel" element={<Travel />} />
             <Route path="/travel/flight" element={<FlightPage />} />
             <Route path="/travel/bus" element={<BusPage />} />
             <Route path="/travel/hotel" element={<HotelPage />} />
             <Route path="/travel/tour" element={<TourPage />} />
-            
+
             {/* 404 - Not Found */}
             <Route path="*" element={<NotFound />} />
           </Route>

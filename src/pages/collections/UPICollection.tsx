@@ -9,7 +9,7 @@ import { ArrowRight, CheckCircle, Smartphone, Zap, Shield, QrCode } from 'lucide
 export default function UPICollection() {
     return (
         <div className="min-h-screen bg-white font-sans">
-            <Navbar />
+
 
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-b from-blue-50/50 to-white">
@@ -292,7 +292,7 @@ export default function UPICollection() {
                 </div>
             </section>
 
-            <Footer />
+
         </div>
     );
 }

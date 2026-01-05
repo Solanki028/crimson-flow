@@ -149,7 +149,7 @@ const CategoryPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+
 
       <main>
         {/* Hero Section */}
@@ -356,7 +356,7 @@ const CategoryPage = () => {
         </section>
       </main>
 
-      <Footer />
+
     </div>
   );
 };

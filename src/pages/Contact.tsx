@@ -11,7 +11,7 @@ import { TypingText } from '@/components/ui/TypingText';
 export default function Contact() {
     return (
         <div className="min-h-screen bg-white font-sans">
-            <Navbar />
+
 
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-b from-blue-50 to-white">
@@ -67,7 +67,8 @@ export default function Contact() {
                                 {[
                                     { icon: Mail, title: "Email Us", content: "info@finsmartpay.in", color: "text-blue-600", bg: "bg-blue-50" },
                                     { icon: Phone, title: "Call Us", content: "+91 9116116269", color: "text-green-600", bg: "bg-green-50" },
-                                    { icon: MapPin, title: "Visit Us", content: "Corporate Add.: TC-719, 7th Floor, Capital Highstreet, Bhiwadi (Raj.), 301019, India", color: "text-purple-600", bg: "bg-purple-50" },
+                                    { icon: MapPin, title: "Visit Us (Corporate)", content: "Corporate Add.: TC-719, 7th Floor, Capital Highstreet, Bhiwadi (Raj.), 301019, India", color: "text-purple-600", bg: "bg-purple-50" },
+                                    { icon: MapPin, title: "Visit Us (Branch)", content: "Unit No B-307, North Ex Mall, Sector 9, Rohini, Rohini Sec-11, North West Delhi, Delhi, Delhi, India, 110085", color: "text-purple-600", bg: "bg-purple-50" },
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-center gap-4 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                                         <div className={`w-12 h-12 rounded-lg ${item.bg} flex items-center justify-center`}>
@@ -170,7 +171,7 @@ export default function Contact() {
                 </div>
             </section>
 
-            <Footer />
+
         </div>
     );
 }

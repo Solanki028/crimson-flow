@@ -319,7 +319,7 @@ const CollectionMockup = ({ collection, index }: { collection: typeof collection
 export default function Collections() {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -553,7 +553,7 @@ export default function Collections() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

@@ -47,7 +47,7 @@ const benefits = [
 export default function DigitalLending() {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero">
@@ -233,7 +233,7 @@ export default function DigitalLending() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

@@ -128,7 +128,7 @@ const PhoneQRMockup = ({ type }: { type: 'static' | 'dynamic' }) => (
 export default function QRCollection() {
     return (
         <div className="min-h-screen bg-white font-sans">
-            <Navbar />
+
 
             {/* HERO SECTION */}
             <section className="relative pt-32 pb-24 overflow-hidden">
@@ -372,7 +372,7 @@ export default function QRCollection() {
                 </div>
             </section>
 
-            <Footer />
+
         </div>
     );
 }

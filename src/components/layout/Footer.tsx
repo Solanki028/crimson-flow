@@ -73,10 +73,13 @@ export const Footer = () => {
             </p>
 
             <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span>Corporate Add.: TC-719, 7th Floor,
-                  Capital Highstreet, Bhiwadi (Raj.), 301019, India</span>
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
+                <span>Corporate Add.: TC-719, 7th Floor, Capital Highstreet, Bhiwadi (Raj.), 301019, India</span>
+              </div>
+              <div className="flex items-start gap-3 text-muted-foreground">
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
+                <span>Branch address: Unit No B-307, North Ex Mall, Sector 9, Rohini, Rohini Sec-11, North West Delhi, Delhi, Delhi, India, 110085</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />

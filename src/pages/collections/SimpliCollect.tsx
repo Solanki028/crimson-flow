@@ -9,7 +9,7 @@ import { ArrowRight, RefreshCw, CheckCircle2, BarChart3, Layers } from 'lucide-r
 export default function SimpliCollect() {
     return (
         <div className="min-h-screen bg-white font-sans">
-            <Navbar />
+
 
             <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-blue-50">
                 <div className="container mx-auto px-6">
@@ -209,7 +209,7 @@ export default function SimpliCollect() {
                 </div>
             </section>
 
-            <Footer />
+
         </div>
     );
 }

@@ -7,7 +7,7 @@ import { FileCheck, ArrowRight } from 'lucide-react';
 export default function ComplianceRegulatory() {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+
 
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero">
         <div className="relative container mx-auto px-6 pt-32 pb-20">
@@ -59,7 +59,7 @@ export default function ComplianceRegulatory() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

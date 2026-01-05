@@ -7,7 +7,7 @@ import { UserCheck, ArrowRight } from 'lucide-react';
 export default function AccountManagement() {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero">
         <div className="relative container mx-auto px-6 pt-32 pb-20">
           <div className="max-w-4xl mx-auto text-center">
@@ -54,7 +54,7 @@ export default function AccountManagement() {
           </div>
         </div>
       </section>
-      <Footer />
+
     </div>
   );
 }
