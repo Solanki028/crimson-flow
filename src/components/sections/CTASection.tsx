@@ -80,9 +80,9 @@ export const CTASection = () => {
   }, []);
 
   const formatNumber = (num) => {
-    if (num >= 1000000) return `$${(num / 1000000).toFixed(1)}M`;
-    if (num >= 1000) return `$${(num / 1000).toFixed(1)}K`;
-    return `$${num.toFixed(0)}`;
+    if (num >= 1000000) return `₹${(num / 1000000).toFixed(1)}M`;
+    if (num >= 1000) return `₹${(num / 1000).toFixed(1)}K`;
+    return `₹${num.toFixed(0)}`;
   };
 
   // Generate SVG path for smooth line
@@ -284,11 +284,11 @@ export const CTASection = () => {
                   <div className="relative h-80">
                     {/* Y-axis labels */}
                     <div className="absolute left-0 top-0 bottom-8 w-12 flex flex-col justify-between text-xs text-gray-500 pr-2">
-                      <span>$200K</span>
-                      <span>$150K</span>
-                      <span>$100K</span>
-                      <span>$50K</span>
-                      <span>$0</span>
+                      <span>₹200K</span>
+                      <span>₹150K</span>
+                      <span>₹100K</span>
+                      <span>₹50K</span>
+                      <span>₹0</span>
                     </div>
 
                     {/* Chart area */}
@@ -441,7 +441,7 @@ export const CTASection = () => {
                 {/* Bottom Stats */}
                 <div className="grid grid-cols-3 gap-4 mt-8">
                   {[
-                    { icon: '📊', label: 'Avg Transaction', value: '$156', gradient: 'from-blue-100 to-cyan-100', border: 'border-blue-200' },
+                    { icon: '📊', label: 'Avg Transaction', value: '₹156', gradient: 'from-blue-100 to-cyan-100', border: 'border-blue-200' },
                     { icon: '⚡', label: 'Processing Speed', value: '0.3s', gradient: 'from-amber-100 to-orange-100', border: 'border-orange-200' },
                     { icon: '✓', label: 'Success Rate', value: '99.8%', gradient: 'from-green-100 to-emerald-100', border: 'border-green-200' }
                   ].map((stat, i) => (

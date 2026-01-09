@@ -53,7 +53,7 @@ export default function About() {
                 <div className="container mx-auto px-6">
                     <div className="grid md:grid-cols-4 gap-8 text-center">
                         {[
-                            { label: "Annual Volume", value: "$50B+" },
+                            { label: "Annual Volume", value: "₹50B+" },
                             { label: "Transactions", value: "2M+" },
                             { label: "Team Members", value: "150+" },
                             { label: "Global Presence", value: "12 Countries" }
@@ -81,7 +81,7 @@ export default function About() {
                         <div className="space-y-12 relative border-l-2 border-gray-100 ml-6 md:ml-0">
                             {[
                                 { year: "2020", title: "The Beginning", desc: "Founded with a vision to democratize financial infrastructure.", icon: Target },
-                                { year: "2021", title: "Series A", desc: "Raised $20M to expand our engineering team and product suite.", icon: TrendingUp },
+                                { year: "2021", title: "Series A", desc: "Raised ₹20Cr to expand our engineering team and product suite.", icon: TrendingUp },
                                 { year: "2022", title: "Global Expansion", desc: "Launched in Southeast Asia and MENA regions.", icon: Globe },
                                 { year: "2024", title: "Market Leader", desc: "Serving 500+ enterprise clients processing billions daily.", icon: Users },
                             ].map((item, i) => (

@@ -104,12 +104,7 @@ export const HeroSection = () => {
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button
-                className="group bg-white border-2 border-gray-200 hover:border-gray-300 text-gray-900 px-8 py-6 text-lg rounded-xl shadow-sm hover:shadow-md transition-all"
-              >
-                <Play className="w-5 h-5 mr-2" />
-                <span>Watch Demo</span>
-              </Button>
+
             </motion.div>
 
             {/* Stats */}
@@ -120,7 +115,7 @@ export const HeroSection = () => {
               className="grid grid-cols-2 gap-8 pt-8"
             >
               {[
-                { value: '$50B+', label: 'Transactions Processed' },
+                { value: '₹50B+', label: 'Transactions Processed' },
                 { value: '500+', label: 'Enterprise Clients' },
                 { value: '99.99%', label: 'Uptime SLA' },
                 { value: '40+', label: 'Countries Served' },
@@ -148,7 +143,7 @@ export const HeroSection = () => {
           >
             <div className="relative rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
               <img
-                src="/hero-mockup.png"
+                src="/hero-mockups.png"
                 alt="Fintech Dashboard Mockup"
                 className="w-full h-auto object-cover"
               />

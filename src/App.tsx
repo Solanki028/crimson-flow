@@ -44,6 +44,14 @@ import TourPage from "./pages/travel/tour";
 
 
 
+
+// Legal Pages
+import { LegalLayout } from "./layouts/LegalLayout";
+import PrivacyPolicy from "./pages/Legal/PrivacyPolicy";
+import TermsOfService from "./pages/Legal/TermsOfService";
+import CookiePolicy from "./pages/Legal/CookiePolicy";
+import Partner from "./pages/Partner";
+
 import ScrollToTop from "./components/ScrollToTop";
 import { WhatsAppButton } from "./components/WhatsAppButton";
 
@@ -60,7 +68,9 @@ const App = () => (
           <Route element={<MainLayout />}>
             <Route path="/" element={<Index />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/partner" element={<Partner />} />
             <Route path="/collections" element={<Collections />} />
             <Route path="/payments" element={<Payments />} />
             <Route path="/service" element={<Service />} />
@@ -102,6 +112,14 @@ const App = () => (
 
             {/* 404 - Not Found */}
             <Route path="*" element={<NotFound />} />
+          </Route>
+
+
+          {/* Legal Routes (Without Navbar) */}
+          <Route element={<LegalLayout />}>
+            <Route path="/legal/privacy" element={<PrivacyPolicy />} />
+            <Route path="/legal/terms" element={<TermsOfService />} />
+            <Route path="/legal/cookie-policy" element={<CookiePolicy />} />
           </Route>
         </Routes>
       </BrowserRouter>

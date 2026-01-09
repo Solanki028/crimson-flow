@@ -228,7 +228,7 @@ export const Navbar = () => {
                           (link.type === "payments" && isPaymentsOpen) ||
                           (link.type === "service" && isSecurityOpen) ||
                           (link.type === "travel" && isTravelOpen)) &&
-                          "rotate-180"
+                        "rotate-180"
                       )}
                     />
                   </button>
@@ -249,67 +249,67 @@ export const Navbar = () => {
                       (link.type === "payments" && isPaymentsOpen) ||
                       (link.type === "service" && isSecurityOpen) ||
                       (link.type === "travel" && isTravelOpen)) && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                        transition={{ duration: 0.2 }}
-                        className="absolute top-full left-1/2 -translate-x-1/2 pt-4"
-                        onMouseEnter={() => {
-                          if (link.type === "collections")
-                            setIsBankingOpen(true);
-                          if (link.type === "payments") setIsPaymentsOpen(true);
-                          if (link.type === "service") setIsSecurityOpen(true);
-                          if (link.type === "travel") setIsTravelOpen(true);
-                        }}
-                        onMouseLeave={() => {
-                          if (link.type === "collections")
-                            setIsBankingOpen(false);
-                          if (link.type === "payments")
-                            setIsPaymentsOpen(false);
-                          if (link.type === "service") setIsSecurityOpen(false);
-                          if (link.type === "travel") setIsTravelOpen(false);
-                        }}
-                      >
-                        <div
-                          className={cn(
-                            "bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl border border-gray-100 p-4 grid gap-2",
-                            link.type === "travel"
-                              ? "min-w-[480px] grid-cols-2"
-                              : "min-w-[480px] grid-cols-2"
-                          )}
+                        <motion.div
+                          initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                          animate={{ opacity: 1, y: 0, scale: 1 }}
+                          exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-1/2 -translate-x-1/2 pt-4"
+                          onMouseEnter={() => {
+                            if (link.type === "collections")
+                              setIsBankingOpen(true);
+                            if (link.type === "payments") setIsPaymentsOpen(true);
+                            if (link.type === "service") setIsSecurityOpen(true);
+                            if (link.type === "travel") setIsTravelOpen(true);
+                          }}
+                          onMouseLeave={() => {
+                            if (link.type === "collections")
+                              setIsBankingOpen(false);
+                            if (link.type === "payments")
+                              setIsPaymentsOpen(false);
+                            if (link.type === "service") setIsSecurityOpen(false);
+                            if (link.type === "travel") setIsTravelOpen(false);
+                          }}
                         >
-                          {(link.type === "collections"
-                            ? collectionsProducts
-                            : link.type === "payments"
-                            ? paymentsProducts
-                            : link.type === "service"
-                            ? serviceProducts
-                            : link.type === "travel"
-                            ? travelProducts
-                            : []
-                          ).map((product) => (
-                            <Link
-                              key={product.name}
-                              to={product.href}
-                              className="flex items-start gap-3 p-3 rounded-xl hover:bg-blue-50 transition-all duration-200 group"
-                            >
-                              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:from-blue-200 group-hover:to-blue-100 transition-all shadow-sm">
-                                <product.icon className="w-5 h-5 text-blue-600" />
-                              </div>
-                              <div>
-                                <span className="block font-semibold text-sm text-gray-900 group-hover:text-blue-600 transition-colors">
-                                  {product.name}
-                                </span>
-                                <span className="text-xs text-gray-600 leading-snug">
-                                  {product.description}
-                                </span>
-                              </div>
-                            </Link>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
+                          <div
+                            className={cn(
+                              "bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl border border-gray-100 p-4 grid gap-2",
+                              link.type === "travel"
+                                ? "min-w-[480px] grid-cols-2"
+                                : "min-w-[480px] grid-cols-2"
+                            )}
+                          >
+                            {(link.type === "collections"
+                              ? collectionsProducts
+                              : link.type === "payments"
+                                ? paymentsProducts
+                                : link.type === "service"
+                                  ? serviceProducts
+                                  : link.type === "travel"
+                                    ? travelProducts
+                                    : []
+                            ).map((product) => (
+                              <Link
+                                key={product.name}
+                                to={product.href}
+                                className="flex items-start gap-3 p-3 rounded-xl hover:bg-blue-50 transition-all duration-200 group"
+                              >
+                                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center group-hover:from-blue-200 group-hover:to-blue-100 transition-all shadow-sm">
+                                  <product.icon className="w-5 h-5 text-blue-600" />
+                                </div>
+                                <div>
+                                  <span className="block font-semibold text-sm text-gray-900 group-hover:text-blue-600 transition-colors">
+                                    {product.name}
+                                  </span>
+                                  <span className="text-xs text-gray-600 leading-snug">
+                                    {product.description}
+                                  </span>
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
                   </AnimatePresence>
                 )}
               </div>
@@ -318,9 +318,9 @@ export const Navbar = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button className="text-gray-700 hover:text-gray-900 font-medium text-sm bg-transparent hover:bg-gray-50 border-0 shadow-none">
+            {/* <Button className="text-gray-700 hover:text-gray-900 font-medium text-sm bg-transparent hover:bg-gray-50 border-0 shadow-none">
               Sign In
-            </Button>
+            </Button> */}
             <Link to="/contact">
               <Button className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-semibold text-sm px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition-all">
                 Get Started Today
@@ -385,12 +385,12 @@ export const Navbar = () => {
                               {(link.type === "collections"
                                 ? collectionsProducts
                                 : link.type === "payments"
-                                ? paymentsProducts
-                                : link.type === "service"
-                                ? serviceProducts
-                                : link.type === "travel"
-                                ? travelProducts
-                                : []
+                                  ? paymentsProducts
+                                  : link.type === "service"
+                                    ? serviceProducts
+                                    : link.type === "travel"
+                                      ? travelProducts
+                                      : []
                               ).map((product) => (
                                 <Link
                                   key={product.name}
@@ -398,12 +398,12 @@ export const Navbar = () => {
                                     link.type === "collections"
                                       ? "/collections"
                                       : link.type === "payments"
-                                      ? "/payments"
-                                      : link.type === "service"
-                                      ? "/service"
-                                      : link.type === "travel"
-                                      ? "/travel"
-                                      : product.href
+                                        ? "/payments"
+                                        : link.type === "service"
+                                          ? "/service"
+                                          : link.type === "travel"
+                                            ? "/travel"
+                                            : product.href
                                   }
                                   onClick={() => setIsMobileMenuOpen(false)}
                                   className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors py-2 group"

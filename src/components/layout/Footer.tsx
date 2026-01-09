@@ -21,37 +21,28 @@ export const Footer = () => {
   // Defined inside component or outside, but sticking to existing pattern
   const footerLinks = {
     services: [
-      { name: 'Collections', href: '/collections', type: 'category' },
-      { name: 'UPI Data', href: '/collections/upi', type: 'sub' },
-      { name: 'QR Collection', href: '/collections/qr', type: 'sub' },
+      { name: 'Collections', href: '#', type: 'category' },
+      { name: 'UPI Collection', href: '/collections/upi-collection', type: 'sub' },
+      { name: 'QR Collection', href: '/collections/qr-collection', type: 'sub' },
 
-      { name: 'Payments', href: '/payments', type: 'category' },
+      { name: 'Payments', href: '#', type: 'category' },
       { name: 'Payment Gateway', href: '/payments/gateway', type: 'sub' },
       { name: 'UPI Solutions', href: '/payments/upi', type: 'sub' },
 
-      { name: 'Financial Services', href: '/service', type: 'category' },
+      { name: 'Financial Services', href: '#', type: 'category' },
       { name: 'Insurance Tech', href: '/service/insurance', type: 'sub' },
       { name: 'Wealth Management', href: '/service/wealth', type: 'sub' },
     ],
     company: [
-      { name: 'About Us' },
-      { name: 'Careers' },
-      { name: 'Blog' },
-      { name: 'Press' },
-      { name: 'Partners' },
+      { name: 'About Us', href: '/about' },
+      { name: 'Partners', href: '/partner' },
     ],
-    resources: [
-      { name: 'Documentation' },
-      { name: 'API Reference' },
-      { name: 'Status' },
-      { name: 'Changelog' },
-      { name: 'Support' },
-    ],
+
     legal: [
-      { name: 'Privacy Policy' },
-      { name: 'Terms of Service' },
-      { name: 'Cookie Policy' },
-      { name: 'Security' },
+      { name: 'Privacy Policy', href: '/legal/privacy' },
+      { name: 'Terms of Service', href: '/legal/terms' },
+      { name: 'Cookie Policy', href: '/legal/cookie-policy' },
+
     ],
   };
 
@@ -124,35 +115,17 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1 group cursor-default"
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="font-display font-semibold text-foreground mb-4">Resources</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1 group cursor-default"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
 
           {/* Legal */}
           <div>
@@ -160,13 +133,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href="#"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1 group cursor-default"
+                  <Link
+                    to={link.href}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-1 group"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

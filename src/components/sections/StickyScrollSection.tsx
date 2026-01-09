@@ -141,7 +141,7 @@ export const StickyScrollSection = () => {
                     {/* Stats Grid */}
                     <div className="grid grid-cols-3 gap-4 mb-6">
                       {[
-                        { label: 'Total Volume', value: '$2.4M', change: '+12.5%', trend: 'up' },
+                        { label: 'Total Volume', value: '₹2.4M', change: '+12.5%', trend: 'up' },
                         { label: 'Transactions', value: '14,582', change: '+8.2%', trend: 'up' },
                         { label: 'Success Rate', value: '99.8%', change: '+0.3%', trend: 'up' },
                       ].map((stat, i) => (
@@ -196,9 +196,9 @@ export const StickyScrollSection = () => {
                       <div className="text-sm font-semibold text-foreground mb-4">Recent Activity</div>
                       <div className="space-y-3">
                         {[
-                          { type: 'UPI', amount: '$1,245', status: 'completed', time: '2m ago' },
-                          { type: 'Card', amount: '$890', status: 'completed', time: '5m ago' },
-                          { type: 'Transfer', amount: '$2,340', status: 'processing', time: '8m ago' },
+                          { type: 'UPI', amount: '₹1,245', status: 'completed', time: '2m ago' },
+                          { type: 'Card', amount: '₹890', status: 'completed', time: '5m ago' },
+                          { type: 'Transfer', amount: '₹2,340', status: 'processing', time: '8m ago' },
                         ].map((tx, i) => (
                           <motion.div
                             key={i}
@@ -262,7 +262,7 @@ export const StickyScrollSection = () => {
               <div className="p-6 bg-gradient-to-br from-primary/5 to-background space-y-4">
                 <div className="grid grid-cols-3 gap-3">
                   {[
-                    { label: 'Volume', value: '$2.4M' },
+                    { label: 'Volume', value: '₹2.4M' },
                     { label: 'Txns', value: '14K' },
                     { label: 'Rate', value: '99.8%' },
                   ].map((stat) => (
